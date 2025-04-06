@@ -117,6 +117,43 @@
     .social-links a:hover {
       color: #FFD700;
     }
+
+    /* Медиазапросы для мобильных устройств */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      .ticket-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+      .ticket {
+        padding: 12px;
+      }
+      .ticket img {
+        max-width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+        margin-top: 50px;
+      }
+      .ticket-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .ticket {
+        padding: 10px;
+      }
+      .ticket img {
+        max-width: 100%;
+      }
+      .advertisement > div {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
