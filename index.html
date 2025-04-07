@@ -78,11 +78,6 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
       border: 2px solid #FFD700;
     }
-    .ticket img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
     .ticket-description {
       font-size: 16px;
       color: #FFD700;
@@ -90,6 +85,20 @@
     .ticket-price {
       font-size: 14px;
       color: #FF69B4;
+    }
+    .highlighted-ticket {
+      background-color: #FFD700;
+      color: #1e1e2f;
+      font-weight: bold;
+    }
+    .highlighted-ticket:hover, .highlighted-ticket.selected {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+      border: 2px solid #1e1e2f;
+    }
+    .highlighted-ticket .ticket-description,
+    .highlighted-ticket .ticket-price {
+      color: #1e1e2f;
     }
     .meme-img {
       width: 80%;
@@ -130,9 +139,6 @@
       .ticket {
         padding: 12px;
       }
-      .ticket img {
-        max-width: 80%;
-      }
     }
 
     @media (max-width: 480px) {
@@ -146,9 +152,6 @@
       }
       .ticket {
         padding: 10px;
-      }
-      .ticket img {
-        max-width: 100%;
       }
       .advertisement > div {
         font-size: 16px;
@@ -166,32 +169,28 @@
   <div class="container">
     <h1>🎉 Meme Lottery - Win SOL and Have Fun! 🌰</h1>
     <div class="ticket-container">
-      <div class="ticket" onclick="window.location.href='https://t.me/DegenJack_power'">
-        <img src="https://i.imgur.com/qAoF0uJ.png" alt="Ticket 1" />
+      <div class="ticket" onclick="window.location.href='https://t.me/yourchannel'">
         <div class="ticket-description">
           <p>🃏 DegenJack</p>
-          <p class="ticket-price">0.05 SOL</p>
+          <p class="ticket-price">0.01 SOL</p>
         </div>
       </div>
-      <div class="ticket" onclick="window.location.href='https://t.me/PumpTicket_power'">
-        <img src="https://i.imgur.com/qAoF0uJ.png" alt="Ticket 2" />
+      <div class="ticket" onclick="window.location.href='https://t.me/yourchannel'">
         <div class="ticket-description">
           <p>💥 PumpTicket</p>
-          <p class="ticket-price">0.08 SOL</p>
+          <p class="ticket-price">0.01 SOL</p>
         </div>
       </div>
-      <div class="ticket" onclick="window.location.href='https://t.me/+LHZo9cAbV6M4NWRi'">
-        <img src="https://i.imgur.com/qAoF0uJ.png" alt="Ticket 3" />
+      <div class="ticket" onclick="window.location.href='https://t.me/yourchannel'">
         <div class="ticket-description">
           <p>💀 RugPullRoulette</p>
-          <p class="ticket-price">0.1 SOL</p>
+          <p class="ticket-price">0.01 SOL</p>
         </div>
       </div>
-      <div class="ticket" onclick="window.location.href='https://t.me/+zI10TaHVzjhkYzYy'">
-        <img src="https://i.imgur.com/qAoF0uJ.png" alt="Ticket 4" />
+      <div class="ticket highlighted-ticket" onclick="window.location.href='https://t.me/yourchannel'">
         <div class="ticket-description">
           <p>🚗 LamboSoon</p>
-          <p class="ticket-price">0.2 SOL</p>
+          <p class="ticket-price">0.05 SOL</p>
         </div>
       </div>
     </div>
@@ -200,8 +199,8 @@
   <div class="footer">
     <p>Powered by Meme Power ⚡ | Made with Love & Solana</p>
     <div class="social-links">
-      <a href="https://x.com/memepower_adm?t=fmVmJF2FPjkRus3kPXEb7A&s=09" target="_blank">Twitter</a>
-      <a href="https://t.me/meme_lottery">Telegram</a>
+      <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+      <a href="https://t.me/yourchannel" target="_blank">Telegram</a>
     </div>
   </div>
 </body>
